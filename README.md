@@ -1,4 +1,4 @@
-This theme is maintained by [Ress](https://github.com/ress997).
+This theme is maintained by [ctran2007](https://github.com/ctran2007).
 
 # What is this.
 
@@ -20,21 +20,23 @@ This is the grid based theme for Hugo.
 
 * [Accelerated Mobile Pages Project](https://www.ampproject.org/) a.k.a AMP supported
 * Responsive design
-* Google Analytics
 * Thumbnail
-* Share button
 * Structured data(Article and Breadcrumb)
-* Twitter cards
 * OGP
-* Disqus
 * Syntax Highlight
 * Show `IsDraft`.
+
+## Features removed in this repository
+* Google Analytics
+* Share button
+* Twitter cards
+* Disqus
 
 ## Installation
 
 ```
 $ cd themes
-$ git clone https://github.com/dim0627/hugo_theme_robust.git
+$ git clone https://github.com/ctran2007/hugo_theme_robust.git
 ```
 
 [Hugo \- Installing Hugo](http://gohugo.io/overview/installing/)
@@ -45,9 +47,6 @@ $ git clone https://github.com/dim0627/hugo_theme_robust.git
 baseurl = "https://example.com/"
 title = "SiteTitle"
 theme = "hugo_theme_robust"
-
-googleAnalytics = "UA-XXXXXXXX-XX" # Optional
-disqusShortname = "XYW"
 
 [params]
 description = "This is site description"
