@@ -400,6 +400,7 @@ article.sn > .article-body blockquote p {
 
 article.sn > .article-body figure {
   margin: 1.5rem 0;
+  text-align: center;
 }
 
 article.sn > .article-body img,
@@ -410,8 +411,7 @@ article.sn > .article-body figure amp-img {
 }
 
 article.sn > .article-body figcaption {
-  color: #cfd8dc;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 700;
   margin-top: .5rem;
 }
