@@ -1,0 +1,33 @@
+
+{{ if .IsNamedParams }} <!-- handle named parameters  -->
+
+<div
+   style="border: 1px solid ; padding: 3px;
+   {{ if .Get "align" }}
+     {{ if eq ( .Get "align" ) "center"  }} margin:auto; width:75%; {{ end }}
+     {{ if eq ( .Get "align" ) "right"  }} float:right; {{ end }}
+     {{ if eq ( .Get "align" ) "left"  }} float:left; {{ end }}
+   {{ end }}
+   ">
+  <img src="{{ .Get "src" }}"
+    {{ if .Get "alt" }}
+      alt="{{ .Get "alt" }}"
+    {{ end }}
+
+    {{ if .Get "title" }}
+      title={{ .Get "title" }}
+    {{ end }}
+    style="border: 1px; padding 3px;"
+    />
+  <div style="font-family: 'EB Garamond', serif; font-size:inherit; margin: auto; width: 50%;">{{ .Get "title" }}</div>
+</div>
+<p/>
+
+{{ else }} <!-- handle positional parameters  -->
+
+<p>
+<img src="{{.Get 1 }}" style="float: {{.Get 0 }}; border: 0; padding: 10px;" />
+</p>
+
+{{ end }}
+
