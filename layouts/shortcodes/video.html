@@ -3,6 +3,7 @@
 <video src="{{.Get "src" }}"
        preload="{{ .Get "preload" }}"
        controls="yes"
+       poster="{{.Get "thumbnail" }}"
        style="top: 0; left: 0; width: 100%; height: 100%; border:0;" />
   {{ if (.Get "caption") }}
 <center>{{.Get "caption" }}</center>
@@ -13,6 +14,7 @@
 <video src="{{.Get 0}}"
        preload="{{ .Get "preload" }}"
        controls="yes"
+       poster="{{.Get "thumbnail" }}"
        style="top: 0; left: 0; width: 100%; height: 100%; border:0;" />
   {{ if (.Get "caption") }}
 <center>{{.Get "caption" }}</center>
